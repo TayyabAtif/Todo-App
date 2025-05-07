@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo App</h1>
+        <div class="todo-input">
+            <input type="text" id="todoInput" placeholder="Add a new task...">
+            <select id="categorySelect">
+                <option value="personal">Personal</option>
+                <option value="work">Work</option>
+            </select>
+            <button id="addTodo">Add</button>
+        </div>
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All Tasks</button>
+            <button class="filter-btn" data-filter="active">Active Tasks</button>
+            <button class="filter-btn" data-filter="completed">Completed Tasks</button>
+            <button class="filter-btn" data-filter="personal">Personal</button>
+            <button class="filter-btn" data-filter="work">Work</button>
+        </div>
+        <div class="todo-list" id="todoList">
+            <!-- Todos will be added here dynamically -->
+        </div>
+        <div class="pagination">
+            <button id="prevPage" class="pagination-btn">Previous</button>
+            <span id="pageInfo">Page 1 of 1</span>
+            <button id="nextPage" class="pagination-btn">Next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
